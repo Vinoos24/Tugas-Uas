@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-laptop-code fa-2xl"></i>
+                            
+                        </span>
+                        <span class="title">Kelompok 5</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-house fa-xl"></i>
+                        </span>
+                        <span class="title">Beranda</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-computer fa-xl"></i>
+                        </span>
+                        <span class="title">List Aset</span>
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-users fa-xl"></i>
+                        </span>
+                        <span class="title">Laporan Pengguna & Aset</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-ranking-star fa-xl"></i>
+                        </span>
+                        <span class="title">Laporan Tahunan</span>
+                    </a>
+                </li>
+                
+                
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-regular fa-circle-question fa-2xl"></i>
+                        </span>
+                        <span class="title">Bantuan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-sharp fa-solid fa-comment-dots fa-xl"></i>
+                        </span>
+                        <span class="title">Feedback & Evaluasi</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-folder-open fa-xl"></i>
+                        </span>
+                        <span class="title">Backup & Pemulihan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                        </span>
+                        <span class="title">Logout</span>
+                    </a>
+                </li>
+
+</ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="search">
+                    <label>
+                      
+                        <input type="text" id="searchBox" placeholder="Search here">
+                    </label>
+                  </div>
+
+                <div class="user">
+                    <img src="assets/imgs/logo poltek.jpeg" alt="">
+                </div>
+            </div>
+
+             <!-- Header untuk halaman List Barang -->
+    <div class="page-header">
+        <h1 align="center">Beranda</h1>
+    </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">Pengunjung</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Barang</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">284</div>
+                        <div class="cardName">Komentar</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">Rp.500.000.000</div>
+                        <div class="cardName">Nominal Aset</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Riwayat Admin </h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+
+                    <table id="adminTable">
+                        <thead>
+                            <tr>
+                                <td>Nama</td>
+                                <td>Jabatan</td>
+                                <td>Tugas</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Kevin Talla</td>
+                                <td>Admin</td>
+                                <td>Penanggung Jawab Lab</td>
+                                <td><span class="status delivered">Aktif</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Nuraini Maswain</td>
+                                <td>Sekretaris 1</td>
+                                <td>Co Admin</td>
+                                <td><span class="status delivered">Aktif</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Dhian Selasi</td>
+                                <td>Sekretaris 2</td>
+                                <td>Pengawas Aset </td>
+                                <td><span class="status delivered">Aktif</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Tessanika</td>
+                                <td>Pencatatan Aset</td>
+                                <td>Penanggug Jawab Aset</td>
+                                <td><span class="status pending">Cuti</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Muhamad Nabil</td>
+                                <td>Service & Management Aset</td>
+                                <td>Perbaikan & Monitoring Aset</td>
+                                <td><span class="status pending">Cuti</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Yunus Ansal</td>
+                                <td>Co Service & Management Aset</td>
+                                <td>Perbaikan & Monitoring Aset</td>
+                                <td><span class="status delivered">Aktif</span></td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Isman Wairoy</td>
+                                <td>Anggota</td>
+                                <td>-</td>
+                                <td><span class="status pending">Cuti</span></td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Hirlan</td>
+                                <td>Anggota</td>
+                                <td>-</td>
+                                <td><span class="status pending">Cuti</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Safrudin</td>
+                                <td>Anggota</td>
+                                <td>-</td>
+                                <td><span class="status pending">Cuti</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Randi</td>
+                                <td>Anggota</td>
+                                <td>-</td>
+                                <td><span class="status pending">Cuti</span></td>
+                            </tr>
+                    <!-- bisa di tambahkan untuk riwayat -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= New Customers ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Profil Anggota</h2>
+                    </div>
+
+                    <table id="profileTable"></table>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/luffy.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Kevin <br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Nuraini Maswain<br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Dhian Selasi<br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Tessanika<br> <span>kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Muhamad Nabil<br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Yunus Ansal<br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Isman Wairoy<br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Hirlan<br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Safrudin<br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+<br>
+                        <tr>
+                            <td width="60px">
+                                <!-- <div class="imgBx"><img src="assets/imgs/buah pala.jpeg" alt=""></div> -->
+                            </td>
+                            <td>
+                                <h4>Randi<br> <span>Kelas 1A</span></h4>
+                            </td>
+                        </tr>
+
+
+                       
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- js pencarian -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchBox = document.getElementById('searchBox');
+        const tables = document.querySelectorAll('.details .recentOrders table');
+
+        searchBox.addEventListener('input', function () {
+            const query = searchBox.value.toLowerCase();
+
+            tables.forEach(table => {
+                const rows = table.querySelectorAll('tbody tr');
+                let hasVisibleRows = false;
+
+                rows.forEach(row => {
+                    const cells = row.getElementsByTagName('td');
+                    let found = false;
+
+                    // Clear previous highlights
+                    row.classList.remove('highlight');
+
+                    for (let i = 0; i < cells.length; i++) {
+                        if (cells[i].innerText.toLowerCase().includes(query)) {
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (found) {
+                        row.style.display = '';
+                        row.classList.add('highlight'); // Highlight found row
+                        hasVisibleRows = true;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+
+                if (!hasVisibleRows) {
+                    table.insertAdjacentHTML('beforeend', '<tfoot><tr><td colspan="4">No results found</td></tr></tfoot>');
+                } else {
+                    const footer = table.querySelector('tfoot');
+                    if (footer) {
+                        footer.remove();
+                    }
+                }
+            });
+        });
+    });
+</script>
+
+
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
